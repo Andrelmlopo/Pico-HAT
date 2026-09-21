@@ -1,0 +1,11 @@
+{
+  "pico_python": "../.venv-pico/bin/python",
+  "pico_source": "../third_party/PicoPose",
+  "pico_checkpoint": "../weights/picopose.ckpt",
+  "droid_python": "../.venv-droid/bin/python",
+  "droid_source": "../third_party/DROID-SLAM",
+  "droid_checkpoint": "../weights/droid.pth",
+  "droid_buffer": 512,
+  "seed": 0,
+  "timeout_seconds": 600
+}

@@ -1,0 +1,36 @@
+{
+  "name": "hat-shared-causal",
+  "anchor_gap": 6,
+  "candidate_count": 5,
+  "selector": {
+    "unary_scale": 100.0,
+    "motion_weight": 0.3,
+    "tight_degrees": 15.0,
+    "tight_minimum": 2,
+    "maximum_override_fraction": 0.7,
+    "warmup": 3
+  },
+  "candidate_guard": {
+    "minimum_translation_m": 0.001,
+    "maximum_translation_m": 100.0,
+    "depth_ratio": 3.0
+  },
+  "fusion": {
+    "slam_weight": 0.1,
+    "rot_scale": 1.0,
+    "max_iter": 200,
+    "lag": 0,
+    "bbox_power": 0.0,
+    "bbox_power_trans": 0.0,
+    "robust_loss": "huber",
+    "robust_fscale": 0.3,
+    "disagree_deg": 30.0,
+    "disagree_downweight": 0.05,
+    "warmup": 4,
+    "sim3_every": 10,
+    "outlier_threshold": 3.0,
+    "stage1_iter": 100,
+    "reanchor_after": 4
+  },
+  "gap_fill": "hold"
+}

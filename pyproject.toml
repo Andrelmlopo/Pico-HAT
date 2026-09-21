@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pico-hat"
+version = "0.1.0"
+description = "Hypothesis-Anchored Tracking with PicoPose and causal DROID-SLAM"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Andre Lopo"}]
+license = "MIT"
+license-files = ["LICENSE", "licenses/*.txt"]
+dependencies = ["numpy>=1.26.4,<3", "scipy>=1.13.1,<1.16", "Pillow>=11.3,<12"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3,<9", "ruff>=0.13,<0.14", "build>=1.3,<2"]
+
+[project.scripts]
+pico-hat = "pico_hat.cli:main"
+
+[project.urls]
+Paper = "https://arxiv.org/pdf/2609.21597"
+Repository = "https://github.com/Andrelmlopo/pico-HAT"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pico_hat = ["shared.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

@@ -1,0 +1,135 @@
+{
+  "release": "0.1.0",
+  "date": "2026-09-21",
+  "temporal_replay": [
+    {
+      "name": "spark02",
+      "frames": 300,
+      "exact": true,
+      "max_error": 0.0,
+      "seconds": 0.8000152353197336,
+      "input_sha256": "3c945c09e69ccff79bf2ac7184b24f27ac625570927660c109bbdd59ebdd5cc0"
+    },
+    {
+      "name": "ycbv01",
+      "frames": 2244,
+      "exact": true,
+      "max_error": 0.0,
+      "seconds": 3.0218861550092697,
+      "input_sha256": "8502043a0c7c3162cfa0cdee0fc41ca34bdbb07b807b3b896e6b0fc85404423a"
+    },
+    {
+      "name": "swisscube01",
+      "frames": 101,
+      "exact": true,
+      "max_error": 0.0,
+      "seconds": 0.2450751569122076,
+      "input_sha256": "5ce8c3a5fe11d34e6515a6fc4d573314dc33510011728460b983a6b21e7011e5"
+    },
+    {
+      "name": "swisscube_seq_000403",
+      "frames": 101,
+      "exact": true,
+      "max_error": 0.0,
+      "seconds": 0.2798239681869745,
+      "input_sha256": "0bd0a43f14665a0e7841a671f6a7e284aee224140a6af40bcf966a5349ba3bc3"
+    },
+    {
+      "name": "swisscube_seq_000424",
+      "frames": 101,
+      "exact": true,
+      "max_error": 0.0,
+      "seconds": 0.23117619194090366,
+      "input_sha256": "e0dee9cdd6bbb2519a45879fc8904306ea816396f4d172a933f3ad861c7ae04d"
+    },
+    {
+      "name": "swisscube_seq_000485",
+      "frames": 101,
+      "exact": true,
+      "max_error": 0.0,
+      "seconds": 0.23742334730923176,
+      "input_sha256": "69be21c04f57c03d4b0c21d5ee04d92bc90c2ca70dab35d06bdc0adedbbe0056"
+    },
+    {
+      "name": "swisscube_seq_000489",
+      "frames": 101,
+      "exact": true,
+      "max_error": 0.0,
+      "seconds": 0.2920827828347683,
+      "input_sha256": "dbb1280e3f1bea42dfb0c418aa5eb4cb55ae88253d869563e2a5f057efa304f3"
+    },
+    {
+      "name": "shirt01",
+      "frames": 2371,
+      "exact": true,
+      "max_error": 0.0,
+      "seconds": 13.59562267549336,
+      "input_sha256": "9e42d47a09e725d1fbc1256b51a20b8978d3cf846511632a41651d13d86ffd49"
+    }
+  ],
+  "cpu_tests": {
+    "python_3_13_numpy_2_2_6_scipy_1_15_3": 17,
+    "installed_wheel_python_3_10_numpy_1_26_4_scipy_1_13_1": 17
+  },
+  "renderer_test": {
+    "passed": true,
+    "format": "textured OBJ + MTL",
+    "checks": [
+      "original off-centre CAD origin",
+      "OpenCV camera convention",
+      "metre/millimetre equivalence",
+      "visible texture colors"
+    ]
+  },
+  "native_sources": {
+    "PicoPose": "543f8fe0dc8fe014a602113977fc034bd9b4578d",
+    "DROID-SLAM": "2dfd39f0dcad44012ca7bbb8aa70b55edbfa9c99"
+  },
+  "fresh_pico_environment": {
+    "python": "3.9.6",
+    "torch": "2.0.0+cu118",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "xformers": "0.0.18",
+    "mmcv-lite": "2.0.0",
+    "pip_check": "passed"
+  },
+  "droid_environment": {
+    "python": "3.10.12",
+    "torch": "2.7.1+cu118",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pip_check": "passed",
+    "extensions": "reused installed compiled extensions at the pinned source revision"
+  },
+  "gpu_mask_sequence": {
+    "frames": 300,
+    "valid_poses": 300,
+    "fusion_ready_frames": 210,
+    "held_frames": 75,
+    "anchor_calls": 50,
+    "slam_valid_frames": 280,
+    "replay_bit_exact": true,
+    "textured_mesh_format": "GLB",
+    "fresh_pico_install": true,
+    "fresh_upstream_source_checkouts": true,
+    "output_sha256": "14af6ecef54f878635b033b9810925b16cabae85296e66f33e6ecf76467dd3fc",
+    "observations_sha256": "3fbda1ea4b9a4a844b6635791b924b2748be5439f0b9c6fa2d7f4e467e62cc63"
+  },
+  "gpu_box_sequence": {
+    "frames": 300,
+    "valid_poses": 300,
+    "fusion_ready_frames": 246,
+    "held_frames": 45,
+    "anchor_calls": 50,
+    "slam_valid_frames": 267,
+    "replay_bit_exact": true,
+    "localization": "xyxy bounding boxes",
+    "slam_input": "masked",
+    "textured_mesh_format": "GLB",
+    "fresh_pico_install": true,
+    "fresh_upstream_source_checkouts": true,
+    "output_sha256": "26a5aa1c381431c5b219c2fd4851c83f24353b7e4dfc66768d45a86c96e450a0",
+    "observations_sha256": "204c3f7ba834b5df2fb00ac0bdf429a7c05f2a5ea32c01926e821c265f5797ad"
+  }
+}

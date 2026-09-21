@@ -1,0 +1,11 @@
+{
+  "rgb": "rgb",
+  "masks": "masks",
+  "camera": {
+    "width": 640,
+    "height": 480,
+    "K": [[600.0, 0.0, 320.0], [0.0, 600.0, 240.0], [0.0, 0.0, 1.0]]
+  },
+  "slam_input": "masked",
+  "slam_resolution": 196608
+}
